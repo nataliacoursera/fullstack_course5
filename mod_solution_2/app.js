@@ -39,6 +39,10 @@
 			  {
 			    name: "Chocolate",
 			    quantity: "5"
+			},
+			 {
+			    name: "Banana",
+			    quantity: "7"
   			}];
 		service.checkoffItem = function (itemIndex){
 			boughtitems.push(buyitems[itemIndex]);
