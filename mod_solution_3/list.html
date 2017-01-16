@@ -1,0 +1,21 @@
+
+<ol ng-if='!list.showError'>
+  <li ng-repeat="item in list.items " >
+    <div class='name'> name: {{item.name}} short name: {{item.short_name}} </div>
+    <div class='description'>{{item.description}}</div>
+    <button class="btn btn-primary" ng-click="list.onRemove({index: $index});">Remove Item</button>
+  </li>
+</ol>
+<div ng-if='list.showError' class='error'>Nothing found</div>
+
+    Contact GitHub API Training Shop Blog About 
+
+
+<!-- 
+<ol>
+  <li ng-repeat="item in foundItems">
+    {{ item.name }}, {{ item.short_name }}, {{ item.description }}
+    <button ng-click="onRemove({index: $index});">Don't want this one!</button>
+  </li>
+</ol>
+ -->
